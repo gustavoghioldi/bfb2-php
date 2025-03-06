@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./files/formulario.php" method="post" onsubmit="validate(event)">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="email" required>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        Es empleado: <input type="checkbox" name="isEmployee">
+        <input type="submit" value="Enviar" >
+    </form>
+</body>
+<script src="js/formValidate.js"></script>
+</html>
