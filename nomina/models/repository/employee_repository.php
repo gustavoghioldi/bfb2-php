@@ -23,7 +23,11 @@ class EmployeeRepository implements IRepository {
 
     public function read($id=null) {
         $connection = $this->connection->connect();
-        $sql = "SELECT * FROM nomina";
+        if ($id != null) {
+            $sql = "SELECT * FROM nomina WHERE doc_id = '" . $id . "'";
+        } else {
+            $sql = "SELECT * FROM nomina";
+        }
         $result = $connection->query($sql);
         // genero un array vacio
         $employees = array();

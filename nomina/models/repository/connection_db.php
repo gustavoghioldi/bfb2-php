@@ -14,3 +14,8 @@ class DBConnection {
         return $connection;
     }
 }
+
+// $conn = new DBConnection();
+// $conn_live = $conn->connect();
+// $conn_live->query("INSERT INTO nomina (first_name, last_name, doc_id, salary) VALUES ('Juan', 'Perez', '123456', '1000')");
+// $conn_live->close();
